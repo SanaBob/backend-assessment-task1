@@ -1,7 +1,7 @@
 To run file:
 
 npm install
-npm run dev (dev mode
+npm run dev (dev mode)
 
 To run tests:
 
