@@ -2,6 +2,8 @@ To run file:
 
 npm install
 
+add in .env: mongoDB's DB_USERNAME, DB_PASSWORD, DB_URL
+
 npm run dev (dev mode)
 
 To run tests:
