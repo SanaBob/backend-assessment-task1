@@ -5,6 +5,8 @@ import AsyncWrapper from '../utils/async-wrapper';
 
 const router = express.Router();
 
+//I implemented AsyncWrapper to catch errors but for the sake of testing I also implented try-catch
+
 //POST /dm/create/?authorId=xxx&recipientId=xxx&body=xxx
 router.post('/create', AsyncWrapper(async (req: Request, res: Response) => {
     try {
