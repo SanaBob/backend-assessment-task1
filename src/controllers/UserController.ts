@@ -23,7 +23,7 @@ router.get('/login', AsyncWrapper(async (req: Request, res: Response) => {
     }
 }));
 
-//registration /register/login/?username=xxx&password=xxx
+//registration /user/login/?username=xxx&password=xxx
 router.post('/register', AsyncWrapper(async (req: Request, res: Response) => {
     try {
         const user = new User({
