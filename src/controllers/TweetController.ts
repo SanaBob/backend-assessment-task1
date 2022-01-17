@@ -4,7 +4,7 @@ import AsyncWrapper from '../utils/async-wrapper';
 
 const router = express.Router();
 
-// GET tweet/get
+// GET tweet/get/?authorId=xxx
 router.get('/get', AsyncWrapper(async (req: Request, res: Response) => {
     try {
 
@@ -101,6 +101,7 @@ router.put('/like', AsyncWrapper(async (req: Request, res: Response) => {
     }
 }));
 
+//put /tweet/retweet/?id=xxx&authorId=xxx
 router.put('/retweet', AsyncWrapper(async (req: Request, res: Response) => {
     try {
 
